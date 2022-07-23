@@ -1,0 +1,24 @@
+$font-poppins: "Poppins", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+
+$primary-color: #000000;
+$second-color: #cecece;
+
+$desktop-smaller: 1330.98px;
+
+$tablet-bigger: 1200.98px;
+$tablet: 1024.98px;
+
+$mobile-bigger: 767.98px;
+$mobile-smaller: 599.98px;
+
+@keyframes bottomToTop{
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

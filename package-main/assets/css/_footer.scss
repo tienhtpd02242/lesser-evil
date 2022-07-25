@@ -1,0 +1,67 @@
+.main-footer{
+    padding: 80px 0 90px;
+    color: #ffffff;
+    background-color: $second-color;
+    position: relative;
+
+    .line-ft{
+        position: absolute;
+        left: 0;
+        top: 0;
+        svg{display: block;}
+    }
+    .wrap{
+        text-align: center;
+    }
+    .logo-ft{
+        img{height: 200px;width: auto;}
+    }
+    .last-col{
+        margin-top: 38px;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+            li{
+                &:not(:last-child){
+                    margin-right: 32px;
+                }
+                a{
+                    width: 50px;
+                    height: 50px;
+                    background: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    color: $primary-color;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        width: 54px;
+                        height: 19px;
+                        background-image: url(../images/icon/hola-mini.svg);
+                        background-size: cover;
+                        position: absolute;
+                        top: -10px;
+                        left: -3px;
+                    }
+                }
+            }
+        }
+        .copy-r{
+            font-family: $font-second;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+            span{
+                font-size: 16px;
+                display: block;
+                margin-top: 2px;
+            }
+        }
+    }
+}

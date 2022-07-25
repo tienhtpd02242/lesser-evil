@@ -1,6 +1,6 @@
 .site-header{
-    background: #ffffff;
-    padding: 16px 0;
+    background: $primary-color;
+    padding: 24px 0 0;
     .wrap{
         display: flex;
         align-items: center;
@@ -8,35 +8,52 @@
         .__logo {
             a{display: block;}
             img{
-                height: 100px;
+                height: 81px;
                 width: auto;
             }
         }
         .__right{
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             ._cta{
-                background-color: $primary-color;
-                color: #ffffff;
+                background-color: #FFFFFF;
+                color: #000000;
+                font-family: $font-primary;
                 margin-right: 32px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                border: none;
             }
             ul{
                 list-style: none;
                 display: flex;
                 li{
                     &:not(:last-child){
-                        margin-right: 16px;
+                        margin-right: 32px;
                     }
                     a{
-                        width: 32px;
-                        height: 32px;
-                        background: $primary-color;
+                        width: 50px;
+                        height: 50px;
+                        background: #ffffff;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         border-radius: 100%;
-                        color: #fff;
+                        color: $primary-color;
+                        position: relative;
                         i.fa{font-size: 20px;}
+
+                        &:before{
+                            content: "";
+                            width: 54px;
+                            height: 19px;
+                            background-image: url(../images/icon/hola-mini.svg);
+                            background-size: cover;
+                            position: absolute;
+                            top: -10px;
+                            left: -3px;
+                        }
                     }
                 }
             }

@@ -1,3 +1,59 @@
-h1{
-  color: red;
+.page-template-homepage{
+  
+  .hero-ss{
+    background-color: $primary-color;
+    padding: 0 0 110px;
+    .wrap{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .left-hero{
+      max-width: 645px;
+      h1{
+        font-family: $font-primary;
+        font-weight: 300;
+        font-size: 96px;
+        line-height: 100%;
+        color: #FFFFFF;
+        span{
+          font-size: 180px;
+          line-height: 80%;
+          font-family: $font-primary;
+          &.lesser{
+            margin-left: 32px;
+          }
+          &.evil{
+            margin-left: 65px;
+          }
+          &.choice{
+            font-size: 96px;
+            line-height: 100%;
+            position: relative;
+            top: -56px;
+          }
+        }
+      }
+      p{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        color: #FFFFFF;
+        margin: 12px 0 48px;
+      }
+      .btn-cm{
+        min-width: 250px;
+        background: #FFF21F;
+        border-color: #FFF21F;
+        color: #000000;
+        &.second{
+          margin-left: 20px;
+          color: #FFF21F;
+          background: transparent;
+        }
+      }
+
+    }
+
+  }
 }

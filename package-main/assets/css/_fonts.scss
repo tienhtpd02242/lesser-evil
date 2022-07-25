@@ -1,83 +1,45 @@
-// Poppins
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-Light.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 300;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-Regular.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 400;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-Medium.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 500;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-SemiBold.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 600;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-Bold.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 700;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-ExtraBold.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 800;
-// }
-// @font-face {
-//   font-family: 'Poppins';
-//   src: url('../fonts/poppins/Poppins-Black.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 900;
-// }
+// Londrina Solid
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('../fonts/londrina-solid/LondrinaSolid-Thin.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('../fonts/londrina-solid/LondrinaSolid-Light.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('../fonts/londrina-solid/LondrinaSolid-Regular.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Londrina Solid';
+    src: url('../fonts/londrina-solid/LondrinaSolid-Black.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 900;
+}
 
-// // Roboto
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../fonts/roboto/Roboto-Light.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 300;
-// }
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../fonts/roboto/Roboto-Regular.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 400;
-// }
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../fonts/roboto/Roboto-Medium.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 500;
-// }
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../fonts/roboto/Roboto-Bold.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 700;
-// }
-// @font-face {
-//   font-family: 'Roboto';
-//   src: url('../fonts/roboto/Roboto-Black.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 900;
-// }
-
-// // Inter
-// @font-face {
-//   font-family: 'Inter';
-//   src: url('../fonts/inter/static/Inter-Medium.ttf')  format('truetype');
-//   font-display: swap;
-//   font-weight: 500;
-// }
+// DM-SAN
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dm-san/DMSans-Regular.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dm-san/DMSans-Medium.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/dm-san/DMSans-Bold.ttf')  format('truetype');
+    font-display: swap;
+    font-weight: 700;
+}

@@ -7,8 +7,6 @@
 */
 get_header();
 
-?>
-<h1>This is Homepage</h1>
-<?php
+get_template_part('package-main/templates/homepage/hero', 'section');
 
 get_footer();

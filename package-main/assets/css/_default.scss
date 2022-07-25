@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: $font-roboto;
+  
   input, textarea, button{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -17,13 +17,20 @@ body{
     }
   }
   b, strong{font-weight: bold}
-}
-* {
-  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p, a, span, strong, b{
+    font-family: $font-second;
+  }
+
 }
 
+
 .container{
-  max-width: 1312px;
+  max-width: 1802px;
   padding: 0 16px;
   margin: 0 auto;
 }

@@ -7,3 +7,10 @@
     font-size: 32px;
     line-height: 38px;
 }
+
+.slow-move-clockwise{
+    animation: slow-move-clockwise 15s cubic-bezier(.41,.17,.57,.79) infinite both;
+}
+.slow-move-anticlockwise{
+    animation: slow-move-anticlockwise 20s cubic-bezier(.41,.17,.57,.79) infinite both;
+}

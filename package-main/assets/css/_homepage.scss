@@ -10,6 +10,7 @@
     }
     .left-hero{
       max-width: 645px;
+      padding-top: 65px;
       h1{
         font-family: $font-primary;
         font-weight: 300;
@@ -22,6 +23,18 @@
           font-family: $font-primary;
           &.lesser{
             margin-left: 32px;
+            position: relative;
+            &:after{
+              content: "";
+              width: 160px;
+              height: 260px;
+              background-image: url(../images/icon/le-icon.svg);
+              background-position: center;
+              background-size: contain;
+              position: absolute;
+              right: -160px;
+              bottom: 39px;
+            }
           }
           &.evil{
             margin-left: 65px;
@@ -55,5 +68,257 @@
 
     }
 
+    .right-hero{
+      width: calc( 100% - 645px);
+      padding-left: 130px;
+      padding-top: 65px;
+      position: relative;
+      text-align: center;
+      .hero-img{
+        position: absolute;
+      }
+      .img-1{
+        position: inherit;
+      }
+      .img-2{
+        right: -1%;
+        bottom: 12%;
+      }
+      .img-3{
+        left: 18%;
+        bottom: 15%;
+      }
+      .img-4{
+        top: 15%;
+        right: 15%;
+      }
+
+      .wrap-circle{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .cir{
+          // animation: 4s rainToDown infinite both;
+          transition: .3s ease all;
+          opacity: 0;
+          visibility: hidden;
+        }
+        .cir-1{
+          width: 27px;
+          animation-delay: 3s;
+        }
+        .cir-2{
+          width: 49px;
+          animation-delay: 1s;
+        }
+        .cir-3{
+          width: 92px;
+          animation-delay: 2s;
+        }
+        .cir-4{
+          width: 48px;
+          animation-delay: 3s;
+        }
+        .cir-5{
+          width: 48px;
+          animation-delay: 1s;
+        }
+        .cir-6{
+          width: 27px;
+          animation-delay: 3s;
+        }
+        .cir-7{
+          width: 27px;
+          animation-delay: 1s;
+        }
+        .cir-8{
+          width: 27px;
+          animation-delay: 2s;
+        }
+        .cir-9{
+          width: 48px;
+          animation-delay: 3s;
+        }
+      }
+
+    }
+
   }
+
+  .benefit-ss{
+    
+    background: #231F20;
+    position: relative;
+    .wrap{
+      text-align: center;
+    }
+
+    .halo-big{
+      position: absolute;
+      top: -140px;
+      left: 65px;
+    }
+    .halo-mini{
+      position: absolute;
+      right: 3%;
+      bottom: 28%;
+    }
+
+    .wrap-can{
+      .benefit-img{
+        position: absolute;
+        &.img-1{
+          left: 7%;
+          bottom: 30%;
+        }
+        &.img-2{
+          left: 40%;
+          top: 20%;
+        }
+        &.img-3{
+          left: 65%;
+          top: 20%;
+        }
+        &.img-4{
+          top: 8%;
+          right: 5%;
+        }
+      }
+    }
+
+    .content{
+      padding: 715px 0 170px;
+      overflow: hidden;
+      .rotate-div{
+        transform: rotate(180deg);
+        
+        ._des{
+          font-family: $font-second;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 52px;
+          color: #FFFFFF;
+          max-width: 1378px;
+          width: 100%;
+          min-height: 665px;
+          margin: 0 auto;
+          left: calc(50% - 689px);
+          bottom: -180px;
+          animation: rotate360deg 48s linear infinite;      }
+      }
+      .heading{
+        font-family: $font-primary;
+        font-weight: 300;
+        font-size: 96px;
+        line-height: 114px;
+        text-transform: uppercase;
+        color: #FFF21F;
+        text-align: center;
+        position: relative;
+        z-index: 9;
+      }
+      .btn-cm{
+        border: none;
+        background: #FFFFFF;
+        padding: 24px 56px;
+        color: #000000;
+        margin-top: 26px;
+        position: relative;
+        z-index: 9;
+      }
+    }
+    
+  }
+  .intro-ss{
+    background: #FFF21F;
+    position: relative;
+    .wrap{
+      display: flex;
+      align-items: center;
+    }
+    .left-intro{
+      position: relative;
+      width: calc(100% - 850px);
+      text-align: center;
+      .intro-img{
+        position: absolute;
+        &.img-1{
+          position: relative;
+          max-width: 497px;
+          margin: -400px auto 0;
+          z-index: 1;
+          img.shadow{
+            position: absolute;
+            z-index: -1;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &:after{
+            content: "";
+            background-image: url(../images/icon/halo-p-big.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 254px;
+            z-index: -1;
+            position: absolute;
+            top: -45px;
+            right: -70%;
+          }
+        }
+        &.img-2{
+          top: 8%;
+          left: -2%;
+        }
+        &.img-3{
+          right: 0;
+          bottom: -64%;
+        }
+        &.img-4{
+          right: 15%;
+          top: 40%;
+        }
+      }
+    }
+    .right-intro{
+      padding: 290px 0 300px 60px;
+      max-width: 910px;
+      width: 100%;
+      h2{
+        font-family: $font-primary;
+        font-weight: 300;
+        font-size: 96px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: #231F20;
+        span{
+          position: relative;
+          font-family: $font-primary;
+          z-index: 1;
+          &:after{
+            content: "";
+            width: 100%;
+            height: 178px;
+            background-image: url(../images/icon/halo-p-mini.png);
+            background-repeat: no-repeat;
+            z-index: -1;
+            position: absolute;
+            right: -76%;
+            top: -50px;
+          }
+        }
+      }
+      .des-intro{
+        font-family: $font-second;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        color: #231F20;
+      }
+    }
+  }
+
 }

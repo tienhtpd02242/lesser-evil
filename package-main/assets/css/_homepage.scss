@@ -99,11 +99,13 @@
         top: 0;
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
         .cir{
-          // animation: 4s rainToDown infinite both;
           transition: .3s ease all;
+          animation: 6s rainToDown infinite linear;
           opacity: 0;
-          visibility: hidden;
         }
         .cir-1{
           width: 27px;
@@ -119,23 +121,23 @@
         }
         .cir-4{
           width: 48px;
-          animation-delay: 3s;
+          animation-delay: 4s;
         }
         .cir-5{
           width: 48px;
-          animation-delay: 1s;
+          animation-delay: 5s;
         }
         .cir-6{
           width: 27px;
-          animation-delay: 3s;
+          animation-delay: 8s;
         }
         .cir-7{
           width: 27px;
-          animation-delay: 1s;
+          animation-delay: 6s;
         }
         .cir-8{
           width: 27px;
-          animation-delay: 2s;
+          animation-delay: 7s;
         }
         .cir-9{
           width: 48px;
@@ -222,11 +224,12 @@
       .btn-cm{
         border: none;
         background: #FFFFFF;
-        padding: 24px 56px;
+        padding: 26px 56px;
         color: #000000;
         margin-top: 26px;
         position: relative;
         z-index: 9;
+        min-width: 300px;
       }
     }
     
@@ -319,6 +322,82 @@
         color: #231F20;
       }
     }
+  }
+  .flavour-ss{
+    background: #ED1944;
+    padding: 100px 0 90px;
+    .wrap{
+      text-align: center;
+    }
+    .heading{
+      font-family: $font-primary;
+      font-weight: 300;
+      font-size: 96px;
+      line-height: 114px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    .des{
+      font-family: $font-second;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: center;
+      color: #FFFFFF;
+      max-width: 1018px;
+      margin: 0 auto;
+    }
+    .btn-cm{
+      margin-top: 40px;
+      border: none;
+      background: #FFFFFF;
+      padding: 26px 56px;
+      color: #000000;
+      min-width: 300px;
+    }
+    .wrap-fla{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 32px;
+      margin-top: 80px;
+      .item-fla{
+        clip-path: polygon(41% 0, 88% 12%, 100% 41%, 90% 81%, 69% 90%, 50% 100%, 22% 98%, 0% 70%, 0% 35%, 16% 10%);
+        background: #FFF21F;
+        padding: 56px 0;
+        position: relative;
+        h3{
+          font-family: $font-primary;
+          font-weight: 300;
+          font-size: 36px;
+          line-height: 43px;
+          text-transform: uppercase;
+          color: #ED1944;
+          margin: 36px auto 0;
+          max-width: 207px;
+        }
+        .content{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #231F20;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .des{
+            font-family: $font-second;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+            max-width: 237px;
+          }
+        }
+      }
+    }
+
   }
 
 }

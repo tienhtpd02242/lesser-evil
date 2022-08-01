@@ -35,28 +35,35 @@ if ( empty($home_options['show_or_hide_section_fla']) ) {
                     <?php 
                     foreach ($flavours_list as $value) { ?>
                         <div class="item-fla">
-                            <?php
+                            <div class="halo">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/images/halo-white.png">
+                            </div>
+                            <?php 
                                 if (!empty($value['image_two'])) { ?>
-                                    <img class="img-two" src="<?php echo $value['image_two'];?>">
-                                <?php }
-                                
-                                if (!empty($value['image'])) { ?>
-                                    <img src="<?php echo $value['image']['url'];?>" alt="<?php echo $value['image']['alt'];?>">
-                                <?php }
-
-                                if (!empty($value['headline'])) { ?>
-                                    <h3><?php echo $value['headline'];?></h3>
+                                    <div class="can">
+                                        <img class="img-two slow-move-clockwise" src= "<?php echo $value['image_two'];?>">
+                                    </div>
                                 <?php }
                             ?>
-
                             <div class="content">
-                                <?php 
+                                <?php
                                     if ( !empty( $value['description'])) { ?>
                                         <div class="des"><?php echo $value['description'];?></div>
                                     <?php }
                                 ?>
                             </div>
 
+                            <div class="wrap">
+                                <?php
+                                    if (!empty($value['image'])) { ?>
+                                        <img src="<?php echo $value['image']['url'];?>" alt="<?php echo $value['image']['alt'];?>">
+                                    <?php }
+
+                                    if (!empty($value['headline'])) { ?>
+                                        <h3><?php echo $value['headline'];?></h3>
+                                    <?php }
+                                ?>
+                            </div>
                         </div>
                     <?php }
                     ?>

@@ -23,9 +23,7 @@ $list_social_glb = $global_opts['list_social_glb'];
 
 <footer class="main-footer">
     <div class="line-ft">
-        <svg width="1920" height="38" viewBox="0 0 1920 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-48 5L421 33.5L620.5 5H745L1061 33.5L1701 5L1955 33.5" stroke="#ED1944" stroke-width="8"/>
-        </svg>
+        
     </div>
 
 	<div class="container">

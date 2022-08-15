@@ -63,6 +63,10 @@ if ( empty($home_options['show_or_hide_section_benefit']) ) {
                     <h2 class="heading"><?php echo $heading_benefit;?></h2>
                 <?php }
 
+                if ( !empty($description_benefit)) { ?>
+                    <div class="_des-mb"><?php echo $description_benefit;?></div>
+                <?php }
+
                 if ( !empty($cta_text_benefit) && !empty($cta_url_benefit) ) { ?>
                     <a class="btn-cm" href="<?php echo $cta_url_benefit;?>"><?php echo $cta_text_benefit;?></a>
                 <?php }  

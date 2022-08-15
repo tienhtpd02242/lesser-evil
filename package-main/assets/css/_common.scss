@@ -6,6 +6,15 @@
     font-family: $font-primary;
     font-size: 32px;
     line-height: 38px;
+    @media (max-width: 1300.98px){
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media (max-width: $mobile-smaller){
+        font-size: 18px;
+        line-height: 24px;
+        padding: 8px 12px;
+    }
 }
 
 .slow-move-clockwise{

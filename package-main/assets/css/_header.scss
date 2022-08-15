@@ -24,6 +24,9 @@
                 font-size: 24px;
                 line-height: 28px;
                 border: none;
+                &:hover{
+                    background-color: #FFF21F;
+                }
             }
             ul{
                 list-style: none;
@@ -53,6 +56,39 @@
                             position: absolute;
                             top: -10px;
                             left: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $mobile-bigger){
+        .wrap {
+            .__logo img{
+                height: 56px;
+            }
+            .__right {
+                ._cta{
+                    margin-right: 18px;
+                    padding: 10px 12px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                ul li {
+                    &:not(:last-child) {
+                        margin-right: 12px;
+                    }
+                    a{
+                        width: 36px;
+                        height: 36px;
+                        &:before{
+                            width: 36px;
+                            height: 12px;
+                            left: 0px;
+                        }
+                        svg{
+                            height: 18px;
                         }
                     }
                 }

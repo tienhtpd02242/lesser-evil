@@ -351,6 +351,7 @@
     padding: 100px 0 90px;
     position: relative;
     z-index: 99;
+    overflow: hidden;
     .wrap{
       text-align: center;
     }
@@ -1493,6 +1494,12 @@
         .img-4 img{
           height: 100px;
         }
+      }
+    }
+    .flavour-ss .wrap-fla .item-fla .can {
+      left: -2%;
+      img{
+        height: 100px;
       }
     }
     .intro-ss .wrap{

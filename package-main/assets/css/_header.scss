@@ -95,4 +95,19 @@
             }
         }
     }
+    @media (max-width: 374.98px){
+        .wrap {
+            .__logo img{
+                height: 48px;
+            }
+            .__right {
+                ._cta{
+                    margin-right: 10px;
+                }
+                ul li:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 }

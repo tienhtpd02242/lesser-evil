@@ -12,7 +12,7 @@ if ( empty($home_options['show_or_hide_section_choice']) && empty($list_choice) 
     <div class="container">
         <div class="wrap-choice">
             <?php
-            foreach ($list_choice as $value) { 
+            foreach ($list_choice as $key => $value) { 
                 $image = $value['image'];
                 $content = $value['content'];
                 ?>
@@ -21,7 +21,13 @@ if ( empty($home_options['show_or_hide_section_choice']) && empty($list_choice) 
                         <img src="<?php echo $image['image_1']['url'];?>" alt="<?php echo $image['image_1']['alt'];?>" class="main-img">
                         <div class="can">
                             <img src="<?php echo $image['image_2']['url'];?>" alt="<?php echo $image['image_2']['alt'];?>" class="main-img">
-                            <img src="<?php echo get_stylesheet_directory_uri();?>/images/shadow-choice.png" class="shadow-img">
+                            <?php 
+                            if( $key == 0 ){
+                                ?><img src="<?php echo get_stylesheet_directory_uri();?>/images/shadow-choice.png" class="shadow-img"><?php
+                            }else{
+                                ?><img src="<?php echo get_stylesheet_directory_uri();?>/images/top-choice.png" class="top-choice"><?php
+                            }
+                            ?>
                         </div>
                     </div>
                     <div class="content">

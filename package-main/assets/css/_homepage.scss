@@ -563,6 +563,12 @@
               position: relative;
               z-index: 3;
             }
+            .top-choice{
+              position: absolute;
+              left: -28px;
+              top: -28px;
+              z-index: 3;
+            }
           }
         }
         .content{
@@ -1202,8 +1208,13 @@
             height: 360px;
           }
         }
-        ._gr-img .can .main-img{
-          height: 180px;
+        ._gr-img .can {
+          .main-img{
+            height: 180px;
+          }
+          .top-choice{
+            top: -14px;
+          }
         }
       }
     }
@@ -1832,8 +1843,14 @@
         }
         ._gr-img{
           max-width: 240px;
-          .can .main-img{
-            height: 120px;
+          .can {
+            .main-img{
+              height: 120px;
+            }
+            .top-choice{
+              top: -10px;
+              left: -14px;
+            }
           }
         }
         .content {
@@ -1920,7 +1937,10 @@
       }
       
     }
-
+    .marquee-text marquee{
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
 
 }

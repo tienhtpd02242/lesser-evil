@@ -38,7 +38,7 @@ add_filter('acf/settings/save_json', 'lesser_evil_acf_json_save_point');
 function lesser_evil_acf_json_save_point( $path ) {
     
     // update path
-    $path = get_stylesheet_directory() . '/acf-json';
+    $path = get_stylesheet_directory() . '/package-main/acf-json';
     
     // return
     return $path;
@@ -51,7 +51,7 @@ function lesser_evil_json_load_point( $paths ) {
     unset($paths[0]);
 
     // append path
-    $paths[] = get_stylesheet_directory() . '/acf-json';
+    $paths[] = get_stylesheet_directory() . '/package-main/acf-json';
     
     // return
     return $paths;
